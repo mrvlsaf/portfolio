@@ -6,7 +6,7 @@ export default function Particle(props) {
     return (
         <div>
             <Particles
-                height={props.height}
+                height="80%"
                 params={{
                     particles: {
                         number: {

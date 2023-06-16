@@ -4,21 +4,22 @@ import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import Projects from "./Projects";
+import "../index.css";
 
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Redirect to="/" />
-        </Switch>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Redirect to="/" />
+      </Switch>
       <footer><h4 className="footer">Copyright &copy; {(new Date().getFullYear())} - Devraj Singh. All Rights Reserved</h4></footer>
-      </>
+    </div>
   );
 }
 

@@ -2,7 +2,6 @@ import React from "react";
 import SideMenu from "./SideMenu";
 import logo from "../images/logo.png";
 import { NavLink } from "react-router-dom";
-// import "./ToolBar.css";
 
 const toolbar = props => (
   <header className="toolbar">
@@ -16,18 +15,10 @@ const toolbar = props => (
       <div className="spacer" />
       <div className="toolbar_navigation-items navbar-right-container">
         <ul>
-          <li>
-          <NavLink to="/home" className="button-1 navlink">Home</NavLink>
-          </li>
-          <li>
-          <NavLink to="/about" className="button-1 navlink">About</NavLink>
-          </li>
-          <li>
-          <NavLink to="/projects" className="button-1 navlink">Projects</NavLink>
-          </li>
-          <li>
-          <NavLink to="/contact" className="button-1 navlink">Contact</NavLink>
-          </li>
+          <li><NavLink to="/home" className="button-1 navlink">Home</NavLink></li>
+          <li><NavLink to="/about" className="button-1 navlink">About</NavLink></li>
+          <li><NavLink to="/projects" className="button-1 navlink">Projects</NavLink></li>
+          <li><NavLink to="/contact" className="button-1 navlink">Contact</NavLink></li>
         </ul>
       </div>
     </nav>

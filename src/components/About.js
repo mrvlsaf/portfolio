@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 
 function About() {
     return (
-        <>            
-            <div className="disable"><Particle height="55em"/></div>
+        <div>
+            <div className="disable"><Particle /></div>
             <div className="common-container">
                 <div className="common-inner-container">
                     <div>
@@ -49,7 +49,7 @@ function About() {
                     <hr className="hr-line" />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

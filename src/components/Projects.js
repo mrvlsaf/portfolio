@@ -7,7 +7,7 @@ import Sdata from "./Sdata";
 export default function Projects() {
     return (
         <>
-            <div className="disable"><Particle height="55em" /></div>
+            <div className="disable"><Particle /></div>
             <div className="common-container">
                 <div className="project-container">
                     {
