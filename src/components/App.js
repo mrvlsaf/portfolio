@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import "../index.css";
 
 
-function App() {
+export default function App() {
   return (
     <div className="app-container">
       <Navbar />
@@ -22,10 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
-
-
-
-
-

@@ -1,12 +1,11 @@
 import React from 'react';
 import Particles from "react-particles-js";
 
-
-export default function Particle(props) {
+export default function Particle({ height }) {
     return (
         <div>
             <Particles
-                height="80%"
+                height={height}
                 params={{
                     particles: {
                         number: {

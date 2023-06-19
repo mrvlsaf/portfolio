@@ -4,8 +4,8 @@ import SideDrawer from "./SideDrawer";
 import BackDrop from "./BackDrop";
 
 export default function Navbar() {
-  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
   const drawerToggleClickHandler = () => setSideDrawerOpen(!sideDrawerOpen);
 
   return (

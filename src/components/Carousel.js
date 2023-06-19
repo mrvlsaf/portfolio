@@ -58,8 +58,8 @@ export default function Carousel(props) {
                 </button>
             </div>
             <div className="popup-buttons">
-                <a href={props.link} target="_blank" className="button-1 button-popup">Github Link</a>
-                <a href={props.visit} target="_blank" className="button-1 button-popup">Visit</a>
+                <a href={props.link} target="_blank" className="button-popup">Github Link</a>
+                {props.visit ? <a href={props.visit} target="_blank" className="button-popup">Visit</a> : <div></div>}
             </div>
         </div>
     )

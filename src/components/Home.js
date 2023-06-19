@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <div className="home-container-2">
-                <img src={image} alt="author's image" />
+                <img className='author-image' src={image} alt="author's image" />
                 <div className="info-container">
                     <h1><Typed
                         className="hey"

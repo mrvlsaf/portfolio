@@ -32,7 +32,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="disable"><Particle /></div>
+            <div className="disable"><Particle height={"80%"} /></div>
             <div className="common-container">
                 <div className="inner-container">
                     <h2 style={{ margin: "0.5em 0.5em 0 0.5em", textAlign: "center" }}>Have a question or want to work together?</h2>

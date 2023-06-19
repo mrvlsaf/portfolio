@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-// import Popup from "./Popup";
 import { Modal, Button } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-import Cara from "./Carousel";
+import Carousel from "./Carousel";
+
 export default function Card(props) {
 
     const [openPop, setopenPop] = useState(false);
-
-
     return (
         <>
             <div className="card-container">
@@ -19,13 +16,12 @@ export default function Card(props) {
                             View
                         </button>
                     </div>
-
                     <div className="popup-front">
                         <Modal size="lg" show={openPop} className="modal-inner2" onHide={() => setopenPop(false)}>
                             <h2 className="overview-head">Overview of the Website</h2>
                             <div className="modal-outer">
                                 <Modal.Body>
-                                    <Cara
+                                    <Carousel
                                         img1={props.img1}
                                         img2={props.img2}
                                         img3={props.img3}
@@ -36,7 +32,7 @@ export default function Card(props) {
                                     />
                                 </Modal.Body>
                                 <div className="tt">
-                                    <button className="button-1 button-popup" onClick={() => setopenPop(false)}>Close Popup</button>
+                                    <button className="button-popup" onClick={() => setopenPop(false)}>Close</button>
                                 </div>
                             </div>
                         </Modal>
@@ -46,4 +42,3 @@ export default function Card(props) {
         </>
     )
 }
-

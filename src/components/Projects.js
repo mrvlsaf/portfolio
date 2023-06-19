@@ -1,17 +1,16 @@
 import React from 'react';
 import Card from "./Card";
 import Particle from "./Particle";
-import Sdata from "./Sdata";
-
+import ProjectsData from "./ProjectsData";
 
 export default function Projects() {
     return (
         <>
-            <div className="disable"><Particle /></div>
+            <div className="disable"><Particle height={"80%"} /></div>
             <div className="common-container">
                 <div className="project-container">
                     {
-                        Sdata.map((val, ind) => {
+                        ProjectsData.map((val, ind) => {
                             return <Card
                                 key={ind}
                                 text={val.text}
@@ -24,7 +23,6 @@ export default function Projects() {
                                 link={val.link}
                                 visit={val.visit}
                             />
-                            {/* </div> */ }
                         })
                     }
 
